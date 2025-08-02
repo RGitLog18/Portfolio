@@ -1,0 +1,202 @@
+.Description{
+    font-size: 1.2rem;
+    color: #ccc;
+    /* margin: 20px 0; */
+    margin-top: 30px;
+    line-height: 1.5;
+    /* border: 1px solid #ccc; */
+    width: 100vw;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 0px;
+    /* padding-top:20px; */
+    height:100vh;
+    /* below codemakes desc stay on top */
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    /* background-color:#34043a; */
+    left: 0;
+    /* cursor: crosshair; */
+}
+
+.overall{
+    position: relative;
+    width: 100vw;
+    height: 108vh;
+    display:block;
+
+    /* background-color: #34043a; */
+}
+
+.Description-Image img{
+    margin-left: 30px;
+    margin-top: 50px;
+    border-radius: 50%;
+    border: 10px solid #a861b6;
+}
+
+
+.Description-Image img:hover {
+  border: 10px solid #34043a;
+  transition: border 0.3s;
+}
+
+.scrolling{
+    background-color: aliceblue;
+    margin-left: 200px;
+    margin-top: 190px;
+    height: 10vh;
+}
+
+.contact{
+  padding: 3px 3px 2px 3px;
+  margin-top:60px;
+  width:50px;
+  height:190px;
+  background-color: #e7e7e7;
+  display: block;
+  content:hidden;
+
+}
+
+.contact img{
+  width:40px;
+  height:40px;
+  margin-left: 3px;
+  border-radius: 50px;
+}
+
+.contact a:hover{
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(93, 156, 236, 0.8), 0 0 20px rgba(93, 156, 236, 0.6);
+}
+
+.Description-Text {
+  /* border: 1px solid #ccc; */
+  width:60vw;
+  /* clip-path: polygon(0% 10%,150% 20%, 100% 80%,0% 90%);
+  inset: -10 ; */
+  /* background: #e7e7e7; */
+}
+
+.Description-Text p{
+  color: rgb(245, 197, 135);
+  font-size: 30px;
+  font-weight: bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* border: 1px solid #ccc; */
+}
+
+.Description-Text h1{
+  color:rgb(230, 230, 250);
+  margin:20px;
+  font-size:50px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  /* border: 1px solid #ccc; */
+  padding:0px;
+    
+
+  /* text-shadow: 0 0 5px #e94c88, 0 0 10px #e94c88, 0 0 15px #e94c88, 0 0 20px #e94c88, 0 0 25px #e94c88, 0 0 3px #e94c88, 0 0px 3px #e94c88; */
+}
+
+.Description-Text h2{
+  color:rgb(188, 17, 240);
+  margin:20px;
+  font-size:60px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  /* border: 1px solid #ccc; */
+  padding:0px;
+    
+
+  /* text-shadow: 0 0 5px #e94c88, 0 0 10px #e94c88, 0 0 15px #e94c88, 0 0 20px #e94c88, 0 0 25px #e94c88, 0 0 3px #e94c88, 0 0px 3px #e94c88; */
+}
+
+.glowing-line {
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  width: 60vw;
+  height: 5px;
+  border:1px solid black;
+  background: linear-gradient(90deg, #f9f9fa, #e2cde2);
+  /* box-shadow: 0 0 10px #4c00ff, 0 0 40px #ff00ff; */
+  transform: translate(-50%, -50%);
+  animation: expandLine 2s ease-out forwards;
+}
+
+@keyframes expandLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95vw; /* Full width of viewport */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .Description {
+    flex-direction: column;
+    width: 100vw;
+    height: 170vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: static;
+  }
+
+  .Description-Image img {
+    margin-left: 20vw;
+    margin-top: 0px;
+    width: 80vw;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+  }
+
+  .Description-Text {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .Description-Text h1 {
+    font-size: 2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .Description-Text h2 {
+    font-size: 2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .Description-Text p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .scrolling {
+    margin-left: 0;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .contact {
+    margin-top: 20px;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #e7e7e7;
+    padding: 10px 0;
+  }
+
+  .contact img {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
